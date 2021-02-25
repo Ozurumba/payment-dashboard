@@ -1089,7 +1089,7 @@ video {
 .bg-red-600 {
   --bg-opacity: 1;
   background-color: #e53e3e;
-  background-color: rgba(229, 62, 62, var(--bg-opacity));
+  background-color: rgba(237, 242, 247, var(--bg-opacity));
 }
 
 .bg-red-700 {
@@ -1263,7 +1263,7 @@ video {
 }
 
 .bg-full {
-  background-size: 100$;
+  background-size: 100;
 }
 
 .border-collapse {
