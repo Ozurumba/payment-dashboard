@@ -1,4 +1,5 @@
 import { Component, OnInit } from "@angular/core";
+import  *  as  data  from  '../../../data.json';
 
 @Component({
   selector: "app-dashboard",
@@ -7,5 +8,7 @@ import { Component, OnInit } from "@angular/core";
 export class DashboardComponent implements OnInit {
   constructor() {}
 
-  ngOnInit() {}
+  ngOnInit() {
+    console.log(data);
+  }
 }
