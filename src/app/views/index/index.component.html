@@ -3,9 +3,17 @@
   <div class="container mx-auto items-center flex flex-wrap">
     <div class="w-full md:w-8/12 lg:w-6/12 xl:w-6/12 px-4">
       <div class="pt-32 sm:pt-0">
+        
         <h2 class="font-semibold text-4xl text-gray-700">
           A dashboard Designed by Ozurumba Obinna
         </h2>
+       
+        <button (click)="fetchPeople()">Fetch People</button>
+        <hr>
+        <ul>
+            <li *ngFor="let person of people$ | async">{{ person.name}}</li>
+        </ul>
+        
         <p class="mt-4 text-lg leading-relaxed text-gray-600">
          A payments Dashboard
           <a
@@ -23,7 +31,7 @@
           [routerLink]="['/admin/dashboard']"
             
             class="get-started text-white font-bold px-6 py-4 rounded outline-none focus:outline-none mr-1 mb-1 bg-red-600 active:bg-red-700 uppercase text-sm shadow hover:shadow-lg ease-linear transition-all duration-150"
-          >
+          style="background-color: red;">
             Go to Dashboard
           </a>
           <a
@@ -37,6 +45,8 @@
       </div>
     </div>
   </div>
+
+  
 
   <img
     class="absolute top-0 b-auto right-0 pt-16 sm:w-6/12 -mt-48 sm:mt-0 w-10/12 max-h-860-px"
